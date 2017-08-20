@@ -7,4 +7,14 @@ class A:
 
     x = property(get_x)
     neg_x = property(get_x(False))
-print help(A)
+class B(A):
+	pass
+
+ins=A()
+#Check is instance
+print(isinstance(ins,A))
+#Print out the whole class defination 
+#print help(A)
+#Check the is subclass  (B sub A Parent)
+print issubclass(B,A)
+
