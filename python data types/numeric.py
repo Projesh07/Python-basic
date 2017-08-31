@@ -87,6 +87,10 @@ print (round(num,2))
 #Less than 3<2 #False
 #Greater than or equal 3 >=2 #True
 #Less than or equal  3<=2 #False
+#Not is used for negate a boolean 
+# if not true or if not false 
+# not just alter the True into False and False into True
+
 print (3<3)
 #False
 print (3>3)
@@ -116,3 +120,5 @@ num1=int(num1)
 num2=int (num2)
 print (num1+num2)
 #Output 350
+
+# is is used as object identity
