@@ -1,0 +1,27 @@
+list_val=[]
+
+for _ in range(int(raw_input())):
+    name = raw_input()
+    score = float(raw_input())
+    list_val.append([name,score])
+max_n=999999
+snd_max=99999
+
+
+         
+
+ls=[]
+for val in range(len(list_val)):            
+    for val2 in range(len(list_val[val])-1):         
+        if list_val[val][val2+1]<max_n:
+             snd_max=max_n
+             max_n=list_val[val][val2+1]           
+        elif  list_val[val][val2+1]<snd_max and list_val[val][val2+1] !=max_n:  
+             snd_max=list_val[val][val2+1]
+ 
+for val in range(len(list_val)): 
+    if list_val[val][1]==snd_max:
+       
+        ls.append(list_val[val][0])
+for i in sorted(ls):
+    print i
