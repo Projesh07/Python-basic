@@ -6,10 +6,16 @@ def bubble(lst):
 	while(Swap):
 		Swap=False
 
+		print 'after a cycle  list value {}',format(lst)
+		print '-------------------------'
+		print '-------------------------'
+		print '-------------------------'
 		for i in range(len(lst)-1):
+			print 'before swaping lst value {}',format(lst)
 			if lst[i]>lst[i+1]:
 				lst[i],lst[i+1]=lst[i+1],lst[i]
 				Swap=True
+				print 'after swaping lst value {}',format(lst)
 
 	return lst
 
